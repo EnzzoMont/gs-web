@@ -1,2 +1,2 @@
 # gs-web
-Entrega da gs
+Entrega da global solution
