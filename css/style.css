@@ -6,6 +6,7 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+/* Estilização header */
 
 strong{
     color: red;
@@ -17,7 +18,7 @@ header{
 
 h1{
     font-weight: 900;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .nav_header{
@@ -29,8 +30,8 @@ h1{
 .logo{
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .nav_menu{
@@ -41,7 +42,7 @@ h1{
     background-color: #000000;
     width: 100%;
     justify-content: space-evenly;
-    height: 70px;
+    height: 60px;
 }
 
 .nav_menu li{
@@ -50,7 +51,7 @@ h1{
 }
 
 .nav_menu li a{
-    font-size: 20px;
+    font-size: 15px;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -59,6 +60,7 @@ h1{
     background-color:#5a4c4cb9;
     padding: 15px;
     border-radius: 15px;
+    transition: all 0.6s;
 }
 
 .nav_toggle {
@@ -86,7 +88,68 @@ h1{
     transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+/* Estilização footer */
+
+.footer{
+    background-color: #000000;
+    color: rgba(170, 20, 20, 0.726);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 20px 0;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.social-links{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.social-links li{
+    margin-right: 25px;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: rgba(170, 20, 20, 0.726);
+    display: flex;
+    align-items: center;   
+}
+
+.social-links a i{
+    font-size: 24px;
+    margin-right: 7px;
+}
+
+.footer p{
+    font-size: 16px;
+    margin: 3px 0;
+}
+
+.local a{
+    text-decoration: none;
+    color: rgba(170, 20, 20, 0.726);
+    font-size: 16px;
+}
+
+.footer .criador{
+    display: flex;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 768px) {
+
+    /* Responsividade header */
+
     .nav_header {
         flex-direction: column;
         align-items: flex-start;
@@ -146,4 +209,35 @@ h1{
     .nav_toggle.active span:nth-child(3) {
         transform: translateY(-6px) rotate(-45deg);
     }
+}
+
+@media (max-width: 550px) {
+
+/* Responsividade footer */
+
+.footer{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-links li{
+    margin-left: 40px;
+    margin-bottom: 10px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
 }
