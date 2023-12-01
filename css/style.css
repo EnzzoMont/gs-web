@@ -6,6 +6,12 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
+main{
+    background: rgb(148,46,46);
+    background: linear-gradient(173deg, rgba(148,46,46,0.9556197478991597) 41%, rgba(8,7,32,0.9360119047619048) 62%);
+}
+
 /* Estilização header */
 
 strong{

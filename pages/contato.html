@@ -31,11 +31,38 @@
         <section>
             <form method="post">
                 <h2>Entre em contato!</h2>
-                <input type="text" id="name" name="name" placeholder="Nome:" required>
-                <input type="email" id="email" email="email" placeholder="Email:" required>
-                <input class="mensagem" type="text" id="mensage" mensage="mensage" placeholder="Digite sua mensagem:" required>
-                <button type="submit">Enviar</button>
+                <input type="text" id="name" name="name" placeholder="Nome:" >
+                <input type="email" id="email" email="email" placeholder="Email:" >
+                <input class="mensagem" type="text" id="mensage" mensage="mensage" placeholder="Digite sua mensagem:" d>
+                <div id="mensageDiv"></div>
+                <button type="button" onclick="valideForm()">Enviar</button>
             </form> 
+        </section>
+        <section class="tabela">
+            <h2>
+                Integrantes
+            </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Nome</th>
+                        <th>RM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="../img/Foto-Enzzo.jpg" alt="Foto do integrante Enzzo"></td>
+                        <td>Enzzo Monteiro</td>
+                        <td>552616</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../img/Foto-Iago.jpg" alt="Foto do integrante Iago"></td>
+                        <td>Iago Diniz</td>
+                        <td>553776</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
     <footer class="footer">

@@ -1,41 +1,82 @@
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85vh;
+main{
+    text-align: center;
 }
 
-form{
-    background-color: black;
-    width: 50%;
-    height: 55%;
-    border-radius: 15px;
-    text-align: center;
-    padding: 30px;
+section{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h2{
-    color: red;
-    font-size: 24px;
     margin-bottom: 20px;
 }
 
-input{
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border-radius: 15px;
-    padding: 8px;
-    width: 100%;
+form{
+    width: 70%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
 }
 
-.mensagem{
-    height: 100px;
+input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
 }
 
 button{
-    background-color: red;
-    color: black;
-    padding: 7px 15px;
-    border-radius: 20px;
-    width: 45%;
+    background-color: black;
+    color: white;
+}
+
+/*Estilização da Tabela */
+
+.tabela{
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: black;
+    
+}
+
+th, td{
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+th{
+    background-color: #f2f2f2;
+}
+
+td{
+    color: #ddd;
+}
+
+img{
+    max-height: 250px;
+    max-width: 250px;    
+}
+
+@media (max-width: 768px){
+    
+    img{
+        max-height: 100px;
+        max-width: 100px;    
+    }
 }
