@@ -38,6 +38,11 @@ button{
     color: white;
 }
 
+#mensageDiv{
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
 /*Estilização da Tabela */
 
 .tabela{
