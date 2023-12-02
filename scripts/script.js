@@ -11,12 +11,12 @@ const navToggle = document.querySelector('.nav_toggle');
         function valideForm() {
             // Recuperando campos pelo DOM
             var name = document.getElementById('name').value;
-            var email = document.getElementById('name').value; 
+            var email = document.getElementById('email').value; 
             var mensage = document.getElementById('mensage').value;
             var mensageDiv = document.getElementById('mensageDiv');
 // Se todos campos estiverem diferente de vazio, ou seja preenchidos, exibir mensagem agradecendo o contato.
             if(name !== '' && email !== '' && mensage !== '') {
-                mensageDiv.innerHTML = "Agradecemos o conta!";
+                mensageDiv.innerHTML = "Agradecemos o contato!";
 
                 // Resetando campos
                 document.getElementById('name').value = '';
